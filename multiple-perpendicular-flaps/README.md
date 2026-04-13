@@ -13,7 +13,8 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 In the following tutorial we model a fluid flowing through a channel. Two solid, elastic flaps are fixed to the floor of this channel. The flaps oscillate due to the fluid pressure building up on its surface. In this case, a fluid and two solids are coupled together using a fully-implicit multi-coupling scheme. The case setup is shown here:
 
-![Setup](images/tutorials-multiple-perpendicular-flaps-setup-two-flaps.png)
+<img src="images/tutorials-multiple-perpendicular-flaps-setup-two-flaps_light.png" class="img-light" alt="Setup">
+<img src="images/tutorials-multiple-perpendicular-flaps-setup-two-flaps_dark.png" class="img-dark" style="display:none;" alt="Setup">
 
 The simulated flow domain is 6 units long (x) and 4 units tall (z). The flaps are clamped at the bottom (z=0) and they are 1 unit tall (z), 0.1 units long (x), and 0.3 units wide (y). Being located at x=-1 and x=1, the flaps split the domain into three equal parts.
 
@@ -29,7 +30,8 @@ For a case showing fluid-structure interaction only (no multi-coupling), take a 
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-multiple-perpendicular-flaps-precice-config.png)
+<img src="images/tutorials-multiple-perpendicular-flaps-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-multiple-perpendicular-flaps-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Why multi-coupling?
 
@@ -115,7 +117,8 @@ After the simulation has finished, you can visualize your results using e.g. Par
 
 Example visualization of the fluid velocity and the solid displacement at t=2.3s, after synchronizing the results with a `Temporal Shift Scale` filter (scale for the deal.II results: 0.1):
 
-![Example visualization](images/tutorials-multiple-perpendicular-flaps-results.png)
+<img src="images/tutorials-multiple-perpendicular-flaps-results_light.png" class="img-light" alt="Example visualization">
+<img src="images/tutorials-multiple-perpendicular-flaps-results_dark.png" class="img-dark" style="display:none;" alt="Example visualization">
 
 ## References
 

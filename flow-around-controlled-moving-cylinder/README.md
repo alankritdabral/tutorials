@@ -13,7 +13,8 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 We simulate a 2D flow around a cylinder. The cylinder is not fixed, but mounted on a spring-damper system which allows it to move in the y-direction. The vortex shedding of the flow brings the cylinder to oscillate up and down. This setup has received attention as a test case for numerical simulations [2] in the past and is backed up with experimental data [3]. The oscillation can be counteracted by moving the root point of the spring [4]. To adjust the root point accordingly, a PID controller is implemented. The full setup is shown below:
 
-![Setup of flow around controlled moving cylinder](images/tutorials-flow-around-controlled-moving-cylinder-setup.png)
+<img src="images/tutorials-flow-around-controlled-moving-cylinder-setup_light.png" class="img-light" alt="Setup of flow around controlled moving cylinder">
+<img src="images/tutorials-flow-around-controlled-moving-cylinder-setup_dark.png" class="img-dark" style="display:none;" alt="Setup of flow around controlled moving cylinder">
 
 This case was contributed by Leonard Willeke et al. [1]. To reduce the overall runtime compared to the original contribution, this case uses a larger time step size 2.5e-3 (instead of 1e-3) and the controller switches on at t=2 (instead of t=40). Still, the scenario requires around an hour to complete.
 
@@ -21,7 +22,8 @@ This case was contributed by Leonard Willeke et al. [1]. To reduce the overall r
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-flow-around-controlled-moving-cylinder-precice-config.png)
+<img src="images/tutorials-flow-around-controlled-moving-cylinder-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-flow-around-controlled-moving-cylinder-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -75,7 +77,8 @@ The `Solid` participant writes a `watchpoint` during the simulation. To plot thi
 
 The displacement of the cylinder clearly shows the onset of the controller after t=2:
 
-![Displacement of controlled moving cylinder](images/tutorials-flow-around-controlled-moving-cylinder-watchpoint.png)
+<img src="images/tutorials-flow-around-controlled-moving-cylinder-watchpoint_light.png" class="img-light" alt="Displacement of controlled moving cylinder">
+<img src="images/tutorials-flow-around-controlled-moving-cylinder-watchpoint_dark.png" class="img-dark" style="display:none;" alt="Displacement of controlled moving cylinder">
 
 ### Plot controller variables
 

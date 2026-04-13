@@ -15,7 +15,8 @@ We solve a system of advection-diffusion-reaction in a fluid flowing past a cyli
 
 The geometry is shown below:
 
-![Geometry](images/tutorials-channel-transport-reaction-geometry.png)
+<img src="images/tutorials-channel-transport-reaction-geometry_light.png" class="img-light" alt="Geometry">
+<img src="images/tutorials-channel-transport-reaction-geometry_light.png" class="img-dark" style="display:none;" alt="Geometry">
 
 The simulation is split into two participants: a Fluid participant that computes the fluid flow and sends the velocity field to the Chemical participant which computes the reaction, diffusion and advection of all chemical species. The coupling is unidirectional (`serial-explicit` with only one data entity being transferred).
 
@@ -23,7 +24,8 @@ The simulation is split into two participants: a Fluid participant that computes
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-channel-transport-reaction-precice-config.png)
+<img src="images/tutorials-channel-transport-reaction-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-channel-transport-reaction-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers and dependencies
 
@@ -51,7 +53,8 @@ To start the `Chemical` participant, run:
 The chemical participant writes `.vtu` and `.pvd` files that can be opened with ParaView. The fluid participant also produces output files representing the velocity field. Since the fluid time step is significantly smaller than the chemical time step, there are more fluid velocity files than chemical concentration files. Keep this in mind when opening both simultaneously.
 The figure below shows the state after a duration of 2 units of time. The concentration in A, B and C are plotted.
 
-![Results](images/tutorials-channel-transport-reaction-state-t40.png)
+<img src="images/tutorials-channel-transport-reaction-state-t40_light.png" class="img-light" alt="Results">
+<img src="images/tutorials-channel-transport-reaction-state-t40_dark.png" class="img-dark" style="display:none;" alt="Results">
 
 ## References
 

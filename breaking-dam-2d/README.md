@@ -13,7 +13,8 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 The two-dimensional breaking dam case is a free surface problem. A large column of water comes into contact with a flexible wall, causing the wall to bend and the water to flow over the wall. A no-slip boundary condition is applied at the bottom, the left, and the right boundary, and a zero pressure condition at the top boundary. The image below shows the alpha value (0 is air, 1 is water) and velocity vectors at t=0.6.
 
-![Breaking dam 2D physics at t=0.595](images/tutorials-breaking-dam-2d-physics.png)
+<img src="images/tutorials-breaking-dam-2d-physics_light.png" class="img-light" alt="Breaking dam 2D physics at t=0.595">
+<img src="images/tutorials-breaking-dam-2d-physics_dark.png" class="img-dark" style="display:none;" alt="Breaking dam 2D physics at t=0.595">
 
 A similar, but not identical, setup is used in [1].
 
@@ -21,7 +22,8 @@ A similar, but not identical, setup is used in [1].
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-breaking-dam-2d-precice-config.png)
+<img src="images/tutorials-breaking-dam-2d-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-breaking-dam-2d-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 

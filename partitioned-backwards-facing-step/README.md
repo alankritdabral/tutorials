@@ -20,7 +20,8 @@ The boundary conditions `coupledVelocity` and `coupledPressure` come with the pr
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-partitioned-backwards-facing-step-precice-config.png)
+<img src="images/tutorials-partitioned-backwards-facing-step-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-partitioned-backwards-facing-step-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -47,13 +48,15 @@ cd fluid2-openfoam
 The OpenFOAM solvers generate a `.foam` file each. You can open this file in ParaView.
 An example of the visualized expected results at $t=3.0s$ looks as follows:
 
-![result](images/tutorials-partitioned-backwards-facing-step-results.png)
+<img src="images/tutorials-partitioned-backwards-facing-step-results_light.png" class="img-light" alt="result">
+<img src="images/tutorials-partitioned-backwards-facing-step-results_dark.png" class="img-dark" style="display:none;" alt="result">
 
 We observe that the velocity and pressure values are smooth across the interface. Going through different time steps, we can also see how our inlet-outlet boundary conditions accurately changed behavior when the recirculation travelled inside the coupling interface.
 
 Plotting the velocity in z-direction over the coupling interface at $t=2.5s$ shows a smooth transition from negative to positive values:
 
-![result](images/tutorials-partitioned-backwards-facing-step-sampled.png)
+<img src="images/tutorials-partitioned-backwards-facing-step-sampled_light.png" class="img-light" alt="result">
+<img src="images/tutorials-partitioned-backwards-facing-step-sampled_dark.png" class="img-dark" style="display:none;" alt="result">
 
 {% disclaimer %}
 This offering is not approved or endorsed by OpenCFD Limited, producer and distributor of the OpenFOAM software via www.openfoam.com, and owner of the OPENFOAM®  and OpenCFD®  trade marks.

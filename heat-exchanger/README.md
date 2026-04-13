@@ -21,17 +21,20 @@ This tutorial is based on [a case](https://www.simscale.com/projects/cheunglucia
 
 This scenario consists of two fluid and one solid participant and represents a [shell-and-tube heat exchanger](https://en.wikipedia.org/wiki/Shell_and_tube_heat_exchanger). The geometry includes an (adiabatic) shell, in which an _inner fluid_ flows. It enters from the top-right inlet and exits from the bottom-left, after getting redirected several times by baffles. The geometry also includes a set of tubes, in which an _outer fluid_ flows from left to right. The two fluids enter in different temperatures and exchange heat through the (thick) solid walls of the tubes. This is a steady-state simulation and the flow is considered laminar.
 
-![Shell-and-tube heat exchanger geometry](images/tutorials-heat-exchanger-geometry.png)
+<img src="images/tutorials-heat-exchanger-geometry_light.png" class="img-light" alt="Shell-and-tube heat exchanger geometry">
+<img src="images/tutorials-heat-exchanger-geometry_dark.png" class="img-dark" style="display:none;" alt="Shell-and-tube heat exchanger geometry">
 
 We define the participants `Inner-Fluid`, `Solid`, and `Outer-Fluid` and two interfaces: one between the `Inner-Fluid` and `Solid` and one between the `Solid` and `Outer-Fluid`. Parallel-explicit coupling is used on both interfaces as pseudo timestepping to reach steady-state. We use nearest-neighbor mapping between all meshes. The OpenFOAM participants can either be executed in serial, or in parallel.
 
-![Heat exchanger: three participants](images/tutorials-heat-exchanger-participants.png)
+<img src="images/tutorials-heat-exchanger-participants.png_light" class="img-light" alt="Heat exchanger: three participants">
+<img src="images/tutorials-heat-exchanger-participants_dark.png" class="img-dark" style="display:none;" alt="Heat exchanger: three participants">
 
 ## Configuration
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-heat-exchanger-precice-config.png)
+<img src="images/tutorials-heat-exchanger-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-heat-exchanger-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 

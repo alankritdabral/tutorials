@@ -19,7 +19,8 @@ The expanding tube test case comes with the interface surface mesh connectivity 
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-elastic-tube-3d-precice-config.png)
+<img src="images/tutorials-elastic-tube-3d-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-elastic-tube-3d-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -41,11 +42,13 @@ You can start the simulation by running the script `./run.sh` located in each pa
 
 You can visualize the results using paraView or `cgx`(for native CalculiX result files), as usual. The total deformation is rather small. Multiplying the deformation by factor of 10 (warp by vector filter in paraView) and visualizing the fluid domain at `t=0.005s` looks as follows:
 
-![result tube](images/tutorials-elastic-tube-3d-tube-result.png)
+<img src="images/tutorials-elastic-tube-3d-tube-result_light.png" class="img-light" alt="result tube">
+<img src="images/tutorials-elastic-tube-3d-tube-result_dark.png" class="img-dark" style="display:none;" alt="result tube">
 
 You can also plot the displacement of the midpoint of the tube for each participant individually by running `sh plot-displacements.sh <filename>`. If you have run all the solver combinations and want to compare the plots, you can run `sh plot-all-displacements.sh` which looks like:
 
-![plot tube](images/tutorials-elastic-tube-3d-plot.png)
+<img src="images/tutorials-elastic-tube-3d-plot_light.png" class="img-light" alt="plot tube">
+<img src="images/tutorials-elastic-tube-3d-plot_dark.png" class="img-dark" style="display:none;" alt="plot tube">
 
 {% disclaimer %}
 This offering is not approved or endorsed by OpenCFD Limited, producer and distributor of the OpenFOAM software via www.openfoam.com, and owner of the OPENFOAM®  and OpenCFD®  trade marks.

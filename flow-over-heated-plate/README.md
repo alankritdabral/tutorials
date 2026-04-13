@@ -13,7 +13,8 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 This scenario consists of one fluid and one solid participant and it is inspired by Vynnycky et al. [1]. A fluid enters a channel with temperature $$ T_\infty $$, where it comes in contact with a solid plate. The plate is heated at its bottom and has a constant temperature of $$ T_{hot} $$.
 
-![img](images/tutorials-flow-over-heated-plate-example.png)
+<img src="images/tutorials-flow-over-heated-plate-example_light.png" class="img-light" alt="img">
+<img src="images/tutorials-flow-over-heated-plate-example_dark.png" class="img-dark" style="display:none;" alt="img">
 
 The test case is two-dimensional and a serial-implicit coupling with Aitken underrelaxation is used for the coupling.
 
@@ -23,7 +24,8 @@ The inlet velocity is $$ u_{\infty} = 0.1 m/s $$, the inlet temperature is $$ T_
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-flow-over-heated-plate-precice-config.png)
+<img src="images/tutorials-flow-over-heated-plate-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-flow-over-heated-plate-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -74,7 +76,8 @@ In case of OpenFOAM, you can open the `.foam` file with ParaView, or create VTK 
 
 An example of the visualized expected results looks as follows:
 
-![result](images/tutorials-flow-over-heated-plate-result-openfoam.png)
+<img src="images/tutorials-flow-over-heated-plate-result-openfoam_light.png" class="img-light" alt="result">
+<img src="images/tutorials-flow-over-heated-plate-result-openfoam_dark.png" class="img-dark" style="display:none;" alt="result">
 
 Observe that the temperature at the bottom of the plate is 310K and at the inlet 300K. On the interface, the temperature is between these values. An area of higher temperature is formed above the plate, which is shifted towards the front, driven by the flow.
 
@@ -97,7 +100,8 @@ First generate the output for each run by adding export to the participant `Soli
 
 After that running a case from this tutorial will export data into `solid-*/precice-exports`. To visualize and compare these results run `python3 plot-final-interface-temperature.py` (You can install the required python packages by running `pip3 install -r plot-final-interface-temperature-requirements.txt`). This will plot the dimensionless temperature `theta = (T-300)/(310-300)` (with `T` being the temperature) across the coupling interface, i.e. where the solid and the fluid meet and exchange heat. The x-axis shows the x coordinate and the y-axis the dimensionless temperature `theta` at the interface. If you want to exclude certain cases, simply comment out the corresponding lines in the script. For reference see below:
 
-![Comparison of the results with different solvers](images/tutorials-flow-over-heated-plate-results-comparison.png)
+<img src="images/tutorials-flow-over-heated-plate-results-comparison_light.png" class="img-light" alt="Comparison of the results with different solvers">
+<img src="images/tutorials-flow-over-heated-plate-results-comparison_dark.png" class="img-dark" style="display:none;" alt="Comparison of the results with different solvers">
 
 ## References
 

@@ -13,7 +13,8 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 We want to simulate the internal flow in a flexible tube as shown in the figure below (image from [1]).
 
-![FSI3 setup](images/tutorials-elastic-tube-1d-setup.png)
+<img src="images/tutorials-elastic-tube-1d-setup_light.png" class="img-light" alt="FSI3 setup">
+<img src="images/tutorials-elastic-tube-1d-setup_dark.png" class="img-dark" style="display:none;" alt="FSI3 setup">
 
 The flow is assumed to be incompressible flow and gravity is neglected. Due to the axisymmetry, the flow can be described using a quasi-two-dimensional continuity and momentum equations. The motivation and exact formulation of the equations that we consider can be found in [2].
 
@@ -33,7 +34,8 @@ Additionally the solvers use the parameters `N = 100` (number of cells), `tau = 
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-elastic-tube-1d-precice-config.png)
+<img src="images/tutorials-elastic-tube-1d-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-elastic-tube-1d-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -86,7 +88,8 @@ For example, to plot the diameter of the fluid-python case using the default pre
 python3 plot-vtk.py diameter fluid-python/output/out_fluid_
 ```
 
-![FSI3 setup](images/tutorials-elastic-tube-1d-diameter.png)
+<img src="images/tutorials-elastic-tube-1d-diameter_light.png" class="img-light" alt="FSI3 setup">
+<img src="images/tutorials-elastic-tube-1d-diameter_dark.png" class="img-dark" style="display:none;" alt="FSI3 setup">
 
 ## Comparing different Fluid results
 
@@ -94,7 +97,8 @@ The Fluid participant defines a watchpoint at `x=5`, which records `pressure` an
 To compare the results of the various Fluid participants, you can run them all and plot the watchpoints using `plot-all.sh`.
 The following is an example of running all Fluid solvers against the `solid-cpp` solver:
 
-![Plot comparing pressure and diameter of all Fluid participants](images/tutorials-elastic-tube-1d-all.png)
+<img src="images/tutorials-elastic-tube-1d-all_light.png" class="img-light" alt="Plot comparing pressure and diameter of all Fluid participants">
+<img src="images/tutorials-elastic-tube-1d-all_dark.png" class="img-dark" style="display:none;" alt="Plot comparing pressure and diameter of all Fluid participants">
 
 ## References
 

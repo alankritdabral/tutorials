@@ -22,7 +22,8 @@ The flow partitioning is done with the fluid-fluid module of the [preCICE OpenFO
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-flow-over-heated-plate-partitioned-flow-precice-config.png)
+<img src="images/tutorials-flow-over-heated-plate-partitioned-flow-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-flow-over-heated-plate-partitioned-flow-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -67,12 +68,14 @@ Have a look at the [flow-over-heated-plate](https://precice.org/tutorials-flow-o
 
 An example of the visualized expected results looks as follows:
 
-![result](images/tutorials-flow-over-heated-plate-partitioned-flow-results.png)
+<img src="images/tutorials-flow-over-heated-plate-partitioned-flow-results_light.png" class="img-light" alt="result">
+<img src="images/tutorials-flow-over-heated-plate-partitioned-flow-results_dark.png" class="img-dark" style="display:none;" alt="result">
 
 Observe that the temperature at the bottom of the plate is 310K and at the inlet 300K. On the interface, the temperature is between these values. An area of higher temperature is formed above the plate, which is shifted towards the front, driven by the flow.  
 The below graph shows that the temperature is now coupled smoothly across both the solid-fluid and the fluid-fluid coupling interface.
 
-![result](images/tutorials-flow-over-heated-plate-partitioned-flow-graph.png)
+<img src="images/tutorials-flow-over-heated-plate-partitioned-flow-graph_light.png" class="img-light" alt="result">
+<img src="images/tutorials-flow-over-heated-plate-partitioned-flow-graph_dark.png" class="img-dark" style="display:none;" alt="result">
 
 The temperature is sampled along the black line seen in the inset image. It is compared to the values obtained from the basic flow-over-heated-plate tutorial case without the additional fluid-fluid coupling.
 

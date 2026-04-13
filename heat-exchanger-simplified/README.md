@@ -20,7 +20,8 @@ Contrary to the [heat exchanger](https://precice.org/tutorials-heat-exchanger.ht
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-heat-exchanger-simplified-precice-config.png)
+<img src="images/tutorials-heat-exchanger-simplified-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-heat-exchanger-simplified-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -61,9 +62,10 @@ to run the solid participant (which is also controlling the coupling).
 
 Similarly to the [flow over heated plate: Two meshes](https://precice.org/tutorials-flow-over-heated-plate-two-meshes.html) tutorial.
 
-![Results of the simplified heat exchanger tutorial](images/tutorials-heat-exchanger-simplified-overview.png)
+<img src="images/tutorials-heat-exchanger-simplified-overview_light.png" class="img-light" alt="Results of the simplified heat exchanger tutorial">
+<img src="images/tutorials-heat-exchanger-simplified-overview_dark.png" class="img-dark" style="display:none;" alt="Results of the simplified heat exchanger tutorial">
 
-![Animation of the simplified heat exchanger tutorial](images/tutorials-heat-exchanger-simplified-animation.webp)
+![Animation of the simplified heat exchanger tutorial](images/tutorials-heat-exchanger-simplified-animation_light.webp)
 
 {% disclaimer %}
 This offering is not approved or endorsed by OpenCFD Limited, producer and distributor of the OpenFOAM software via www.openfoam.com, and owner of the OPENFOAM®  and OpenCFD®  trade marks.

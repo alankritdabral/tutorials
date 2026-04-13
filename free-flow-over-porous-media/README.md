@@ -23,7 +23,8 @@ The setting is illustrated in the following figure:
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-free-flow-over-porous-media-precice-config-visualization.png)
+<img src="images/tutorials-free-flow-over-porous-media-precice-config-visualization_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-free-flow-over-porous-media-precice-config-visualization_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -69,7 +70,9 @@ Both participants write VTU outputs, which can be viewed using ParaView.
 
 The results of the pressure and the velocity fields are as follows:
 
-![Free flow over porous media results - pressure](images/tutorials-free-flow-over-porous-media-result-pressure.png)
-![Free flow over porous media results - velocity](images/tutorials-free-flow-over-porous-media-result-ux.png)
+<img src="images/tutorials-free-flow-over-porous-media-result-pressure_light.png" class="img-light" alt="Free flow over porous media results - pressure">
+<img src="images/tutorials-free-flow-over-porous-media-result-pressure_dark.png" class="img-dark" style="display:none;" alt="Free flow over porous media results - pressure">
+<img src="images/tutorials-free-flow-over-porous-media-result-ux_light.png" class="img-light" alt="Free flow over porous media results - velocity">
+<img src="images/tutorials-free-flow-over-porous-media-result-ux_dark.png" class="img-dark" style="display:none;" alt="Free flow over porous media results - velocity">
 
 Each solver folder contains an input file (`params.input`) that will be passed to the solver executables. This is a DuMUX input file describing the simulation setting, e.g., pressure, mesh size, time stepping, etc.
