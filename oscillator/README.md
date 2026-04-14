@@ -13,7 +13,8 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 This tutorial solves a simple mass-spring oscillator with two masses and three springs. The system is cut at the middle spring and solved in a partitioned fashion:
 
-![Schematic drawing of oscillator example](images/tutorials-oscillator-schematic-drawing.png)
+<img src="images/tutorials-oscillator-schematic-drawing_light.png" class="img-light" alt="Schematic drawing of oscillator example">
+<img src="images/tutorials-oscillator-schematic-drawing_dark.png" class="img-dark" style="display:none;" alt="Schematic drawing of oscillator example">
 
 Note that this case applies a Schwarz-type coupling method and not (like most other tutorials in this repository) a Dirichlet-Neumann coupling. This results in a symmetric setup of the solvers. We will refer to the solver computing the trajectory of $m_1$ as `Mass-Left` and to the solver computing the trajectory of $m_2$ as `Mass-Right`. For more information, please refer to [1].
 
@@ -21,7 +22,8 @@ Note that this case applies a Schwarz-type coupling method and not (like most ot
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-oscillator-precice-config.png)
+<img src="images/tutorials-oscillator-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-oscillator-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -58,11 +60,13 @@ python3 plot-trajectory.py mass-left-python/output/trajectory-Mass-Left.csv TRAJ
 
 The solvers allow you to study the effect of different time stepping schemes on energy conservation. Newmark beta conserves energy:
 
-![Trajectory for Newmark beta scheme](images/tutorials-oscillator-trajectory-newmark-beta.png)
+<img src="images/tutorials-oscillator-trajectory-newmark-beta_light.png" class="img-light" alt="Trajectory for Newmark beta scheme">
+<img src="images/tutorials-oscillator-trajectory-newmark-beta_dark.png" class="img-dark" style="display:none;" alt="Trajectory for Newmark beta scheme">
 
 Generalized alpha does not conserve energy:
 
-![Trajectory for generalized alpha scheme](images/tutorials-oscillator-trajectory-generalized-alpha.png)
+<img src="images/tutorials-oscillator-trajectory-generalized-alpha_light.png" class="img-light" alt="Trajectory for generalized alpha scheme">
+<img src="images/tutorials-oscillator-trajectory-generalized-alpha_dark.png" class="img-dark" style="display:none;" alt="Trajectory for generalized alpha scheme">
 
 For details, refer to [1].
 

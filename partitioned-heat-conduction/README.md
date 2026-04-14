@@ -13,7 +13,8 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 We solve a partitioned heat equation. For information on the non-partitioned case, please refer to [1, p.37ff]. In this tutorial the computational domain is partitioned and coupled via preCICE. The coupling roughly follows the approach described in [2].
 
-![Case setup of partitioned-heat-conduction case](images/tutorials-partitioned-heat-conduction-setup.png)
+<img src="images/tutorials-partitioned-heat-conduction-setup_light.png" class="img-light" alt="Case setup of partitioned-heat-conduction case">
+<img src="images/tutorials-partitioned-heat-conduction-setup_dark.png" class="img-dark" style="display:none;" alt="Case setup of partitioned-heat-conduction case">
 
 Case setup from [3]. `D` denotes the Dirichlet participant and `N` denotes the Neumann participant.
 
@@ -25,7 +26,8 @@ This simple case allows us to compare the solution for the partitioned case to a
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-partitioned-heat-conduction-precice-config.png)
+<img src="images/tutorials-partitioned-heat-conduction-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-partitioned-heat-conduction-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers and dependencies
 

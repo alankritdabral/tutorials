@@ -13,7 +13,8 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 The setup is shown schematically here:
 
-![FSI3 setup](images/tutorials-turek-hron-fsi3-setup.png)
+<img src="images/tutorials-turek-hron-fsi3-setup_light.png" class="img-light" alt="FSI3 setup">
+<img src="images/tutorials-turek-hron-fsi3-setup_dark.png" class="img-dark" style="display:none;" alt="FSI3 setup">
 
 For more information please refer to the original publication of the benchmark [1].
 
@@ -21,7 +22,8 @@ For more information please refer to the original publication of the benchmark [
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-turek-hron-fsi3-precice-config.png)
+<img src="images/tutorials-turek-hron-fsi3-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-turek-hron-fsi3-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -70,7 +72,8 @@ Moreover, as we defined a watchpoint at the flap tip (see `precice-config.xml`),
  ```shell
  plot-displacement.sh solid-dealii
 
-![FSI3 watchpoint](images/tutorials-turek-hron-fsi3-tip-plot.png)
+<img src="images/tutorials-turek-hron-fsi3-tip-plot_light.png" class="img-light" alt="FSI3 watchpoint">
+<img src="images/tutorials-turek-hron-fsi3-tip-plot_dark.png" class="img-dark" style="display:none;" alt="FSI3 watchpoint">
 
 Before running the simulation again, you may want to cleanup any result files using the script `clean-tutorial.sh`.
 

@@ -13,7 +13,7 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 We model a two-dimensional incompressible fluid flowing through a channel with an obstacle. The fluid problem is coupled to a particle participant for particle tracing. Similar to the transport problem (see the [channel-transport tutorial](tutorials-channel-transport.html)), particles are arranged in a circular blob close to the inflow. The particles then move along with the flow as depicted in the following figure
 
-![preCICE configuration visualization](images/tutorials-channel-transport-particles-setup.png)
+![preCICE configuration visualization](images/tutorials-channel-transport-particles-setup_light.png)
 
 Note that this scenario features a unidirectional coupling, where the fluid velocity affects the particles, but the particles do not affect the fluid.
 
@@ -21,8 +21,7 @@ Note that this scenario features a unidirectional coupling, where the fluid velo
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-channel-transport-particles-precice-config.pdf
-)
+![preCICE configuration visualization](images/tutorials-channel-transport-particles-precice-config.pdf)
 
 ## Available solvers
 

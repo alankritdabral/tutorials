@@ -79,13 +79,15 @@ We will couple OpenFOAM with a C++ rigid body solver for fluid-structure interac
 
 In order to gain more control over the rigid body oscillation, a rotational spring is applied at the rigid body origin. After 1.5 seconds we increase the spring constant by a factor of 8 to stabilize the coupled problem. Feel free to modify these parameters (directly in `rigid_body_solver.cpp`) and increase the simulation time (in `precice-config.xml`).
 
-![overview](images/quickstart-setup.png)
+<img src="images/quickstart-setup_light.png" class="img-light" alt="Complete example">
+<img src="images/quickstart-setup_dark.png" class="img-dark" style="display:none;" alt="Complete example">
 
 ## Configuration
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/quickstart-precice-config.png)
+<img src="images/quickstart-precice-config_light.png" class="img-light" alt="Participant configuration">
+<img src="images/quickstart-precice-config_dark.png" class="img-dark" style="display:none;" alt="Participant configuration">
 
 ## Building the rigid body solver
 

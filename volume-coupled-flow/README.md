@@ -15,7 +15,8 @@ We introduce flow into a fluid through a square-shaped source located between $$
 
 The state of the $$ U.x() $$ of the fluid at $$ t = 0.5s $$ (the source region is highlighted):
 
-![Ux](images/tutorials-volume-coupled-flow-Ux.png)
+<img src="images/tutorials-volume-coupled-flow-Ux_light.png" class="img-light" alt="Ux">
+<img src="images/tutorials-volume-coupled-flow-Ux_dark.png" class="img-dark" style="display:none;" alt="Ux">
 
 This case is a convenient starting point for volume coupling where OpenFOAM is a reading participant. The writing Nutils participant (dummy source) can be replaced by a more complex solver according to the user's needs.
 
@@ -23,7 +24,8 @@ This case is a convenient starting point for volume coupling where OpenFOAM is a
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-volume-coupled-flow-precice-config.png)
+<img src="images/tutorials-volume-coupled-flow-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-volume-coupled-flow-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -68,4 +70,5 @@ FF
 
 Since OpenFOAM already uses `U`, we need to create an additional velocity variable to use specifically for the coupling. That allows us to carry the desired value over to OpenFOAM and apply it at the correct moment in the iteration. A simplified view of the workflow:
 
-![reading-config](images/tutorials-volume-coupled-flow-config.png)
+<img src="images/tutorials-volume-coupled-flow-config_light.png" class="img-light" alt="reading-config">
+<img src="images/tutorials-volume-coupled-flow-config_dark.png" class="img-dark" style="display:none;" alt="reading-config">

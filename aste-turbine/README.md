@@ -13,13 +13,15 @@ If you are completely new to ASTE have a look at our [ASTE documentation](https:
 
 Our example consists of a wind turbine blade geometry, which was triangulated using different refinement levels. The mesh files are stored in [this GitLab repository](https://gitlab.lrz.de/precice/precice2-ref-paper-setup) and correspond to the mesh files used for the mapping tests of our [version 2 reference paper](https://doi.org/10.12688/openreseurope.14445.1). The mesh files are automatically downloaded when the `run.sh` script is executed. In this example setup, we map the mesh `0.01.vtk` (left side of the figure) to the mesh `0.006.vtk` (right side of the figure).
 
-![Turbine setup](images/tutorials-aste-turbine-setup.png)
+<img src="images/tutorials-aste-turbine-setup_light.png" class="img-light" alt="Turbine setup">
+<img src="images/tutorials-aste-turbine-setup_dark.png" class="img-dark" style="display:none;" alt="Turbine setup">
 
 ## Configuration
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-aste-turbine-precice-config.png)
+<img src="images/tutorials-aste-turbine-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-aste-turbine-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Running the tutorial
 

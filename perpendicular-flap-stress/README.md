@@ -17,7 +17,8 @@ The scenario is exactly the same as the one described in the [perpendicular flap
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-perpendicular-flap-stress-precice-config.png)
+<img src="images/tutorials-perpendicular-flap-stress-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-perpendicular-flap-stress-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -53,7 +54,8 @@ On the G+Smo side, you can open the `.pvd` file located in the `solid-gismo/outp
 
 As we defined a watchpoint on the 'Solid' participant at the flap tip (see `precice-config.xml`), we can plot it with gnuplot using the script `plot-displacement.sh.` You need to specify the directory of the selected solid participant as a command line argument, so that the script can pick-up the desired watchpoint file, e.g. `plot-displacement.sh solid-gismo`. The resulting graph shows the x displacement of the flap tip. You can modify the script to plot the force instead.
 
-![Flap watchpoint](images/tutorials-perpendicular-flap-stress-displacement-watchpoint.png)
+<img src="images/tutorials-perpendicular-flap-stress-displacement-watchpoint_light.png" class="img-light" alt="Flap watchpoint">
+<img src="images/tutorials-perpendicular-flap-stress-displacement-watchpoint_dark.png" class="img-dark" style="display:none;" alt="Flap watchpoint">
 
 {% disclaimer %}
 This offering is not approved or endorsed by OpenCFD Limited, producer and distributor of the OpenFOAM software via www.openfoam.com, and owner of the OPENFOAM®  and OpenCFD®  trade marks.

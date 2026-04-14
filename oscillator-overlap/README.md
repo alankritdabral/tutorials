@@ -13,7 +13,8 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 This tutorial solves the same problem as the [oscillator tutorial](https://precice.org/tutorials-oscillator.html), but applies a different domain decomposition strategy. See the oscillator tutorial for details on the general setup. The partitioning of the mass-spring system is shown here:
 
-![Schematic drawing of oscillator example with overlapping domain decomposition](images/tutorials-oscillator-overlap-dd.png)
+<img src="images/tutorials-oscillator-overlap-dd_light.png" class="img-light" alt="Schematic drawing of oscillator example with overlapping domain decomposition">
+<img src="images/tutorials-oscillator-overlap-dd_dark.png" class="img-dark" style="display:none;" alt="Schematic drawing of oscillator example with overlapping domain decomposition">
 
 Note that this case applies an overlapping Schwarz-type coupling method and not (like most other tutorials in this repository) a Dirichlet-Neumann coupling. This results in a symmetric setup of the solvers. We will refer to the solver computing the trajectory of $m_1$ as `Mass-Left` and to the solver computing the trajectory of $m_2$ as `Mass-Right`. For more information, please refer to [1].
 
@@ -21,7 +22,8 @@ Note that this case applies an overlapping Schwarz-type coupling method and not 
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-oscillator-overlap-precice-config.png)
+<img src="images/tutorials-oscillator-overlap-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-oscillator-overlap-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 

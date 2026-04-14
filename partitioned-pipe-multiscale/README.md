@@ -40,11 +40,13 @@ For the **1D → 3D** coupling, the inlet velocity is set to $u_{\mathrm{in}} = 
 
 preCICE configuration for the 1D-3D simulation (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization 1D-3D](images/tutorials-partitioned-pipe-multiscale-1d3d-config.png)
+<img src="images/tutorials-partitioned-pipe-multiscale-1d3d-config_light.png" class="img-light" alt="preCICE configuration visualization 1D-3D">
+<img src="images/tutorials-partitioned-pipe-multiscale-1d3d-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization 1D-3D">
 
 preCICE configuration for the 3D-1D simulation:
 
-![preCICE configuration visualization 3D-1D](images/tutorials-partitioned-pipe-multiscale-3d1d-config.png)
+<img src="images/tutorials-partitioned-pipe-multiscale-3d1d-config_light.png" class="img-light" alt="preCICE configuration visualization 3D-1D">
+<img src="images/tutorials-partitioned-pipe-multiscale-3d1d-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization 3D-1D">
 
 ## Available solvers
 
@@ -272,11 +274,13 @@ images/pressure_distribution_<case>.png
 
 ### Example visualization
 
-![Pressure distribution along the main axis in the 3D-1D Coupled Pipe](images/tutorials-partitioned-pipe-multiscale-3d1d-pressure-distribution.png)
+<img src="images/tutorials-partitioned-pipe-multiscale-3d1d-pressure-distribution_light.png" class="img-light" alt="Pressure distribution along the main axis in the 3D-1D Coupled Pipe">
+<img src="images/tutorials-partitioned-pipe-multiscale-3d1d-pressure-distribution_dark.png" class="img-dark" style="display:none;" alt="Pressure distribution along the main axis in the 3D-1D Coupled Pipe">
 
 **Pressure along the pipe centerline.** The pressure decreases nearly linearly from **≈12.8 Pa** at the 3D inlet to **0 Pa** at the 1D outlet, consistent with steady, laminar Poiseuille flow. The 3D (0–20 m) and 1D (20–40 m) sections connect smoothly at the coupling interface.
 
-![Velocity at the 3D coupling interface in the 3D-1D Coupled Pipe](images/tutorials-partitioned-pipe-multiscale-3d1d-velocityProfileInterface3d.png)
+<img src="images/tutorials-partitioned-pipe-multiscale-3d1d-velocityProfileInterface3d_light.png" class="img-light" alt="Velocity at the 3D coupling interface in the 3D-1D Coupled Pipe">
+<img src="images/tutorials-partitioned-pipe-multiscale-3d1d-velocityProfileInterface3d_dark.png" class="img-dark" style="display:none;" alt="Velocity at the 3D coupling interface in the 3D-1D Coupled Pipe">
 
 **Parabolic velocity profile at the 3D outlet / coupling interface (z = 20 m).**  
 The profile is Poiseuille-like with a bulk velocity of **0.1 m/s**; consequently the **centerline velocity is ≈ 0.2 m/s** (≈ 2 × bulk) and vanishes at the wall (no-slip). This is the velocity state at the interface used for coupling to the 1D domain.

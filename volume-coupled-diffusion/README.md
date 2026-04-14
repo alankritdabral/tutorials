@@ -11,13 +11,15 @@ summary: This tutorial illustrates volume coupling with a simple example.
 
 This case illustrates how to implement volume coupling in a simple toy problem. Two diffusion problems are coupled via volume terms. One domain (the source) has constant non-zero Dirichlet boundary conditions. The other domain (the drain) has Neumann boundary conditions and a zero Dirichlet boundary condition at the right edge of the domain. The quantity u flows from the source to the drain.
 
-![Case setup of volume-coupled-diffusion case](images/tutorials-volume-coupled-diffusion-setup.png)
+<img src="images/tutorials-volume-coupled-diffusion-setup_light.png" class="img-light" alt="Case setup of volume-coupled-diffusion case">
+<img src="images/tutorials-volume-coupled-diffusion-setup_dark.png" class="img-dark" style="display:none;" alt="Case setup of volume-coupled-diffusion case">
 
 ## Configuration
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-volume-coupled-diffusion-precice-config.png)
+<img src="images/tutorials-volume-coupled-diffusion-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-volume-coupled-diffusion-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers and dependencies
 

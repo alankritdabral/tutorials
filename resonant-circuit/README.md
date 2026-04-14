@@ -26,7 +26,8 @@ Each of these equations is going to be solved by a different MATLAB solver. Note
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-resonant-circuit-precice-config.png)
+<img src="images/tutorials-resonant-circuit-precice-config.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-resonant-circuit-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -72,7 +73,8 @@ Additionally, the MATLAB participant `capacitor-matlab` records the current and 
 After successfully running the coupling, one can find the curves in the folder `capacitor-matlab` as `Curves.png`.
 
 Example of a `Curves.png` plot:
-![Voltage and current plot of the resonant circuit](images/tutorials-resonant-circuit-curves.png)
+<img src="images/tutorials-resonant-circuit-curves.png" class="img-light" alt="Voltage and current plot of the resonant circuit">
+<img src="images/tutorials-resonant-circuit-curves_dark.png" class="img-dark" style="display:none;" alt="Voltage and current plot of the resonant circuit">
 
 ## References
 

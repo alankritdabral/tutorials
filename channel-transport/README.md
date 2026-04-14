@@ -13,7 +13,8 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 We model a two-dimensional incompressible fluid flowing through a channel with an obstacle. The fluid problem is coupled to a simple transport problem in a uni-directional fashion. The transport problem is initialized with a circular blob close to the inflow. The density of the species is denoted with `T` (like temperature). The convected and diffused blob after 23 timesteps:
 
-![Flap setup](images/tutorials-channel-transport-physics.png)
+<img src="images/tutorials-channel-transport-physics_light.png" class="img-light" alt="Flap setup">
+<img src="images/tutorials-channel-transport-physics_dark.png" class="img-dark" style="display:none;" alt="Flap setup">
 
 The behavior of the blob over the full 200 timesteps looks as follows:
 
@@ -24,14 +25,15 @@ The behavior of the blob over the full 200 timesteps looks as follows:
 
 The transport solver also supports the use of adaptive mesh refinement.
 
-![Setup with AMR](images/tutorials-channel-transport-amr.png)
+<img src="images/tutorials-channel-transport-amr_light.png" class="img-light" alt="Setup with AMR">
+<img src="images/tutorials-channel-transport-amr_dark.png" class="img-dark" style="display:none;" alt="Setup with AMR">
 
 ## Configuration
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-channel-transport-precice-config.png
-)
+<img src="images/tutorials-channel-transport-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-channel-transport-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 

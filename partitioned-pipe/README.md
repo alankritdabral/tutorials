@@ -19,7 +19,8 @@ On the coupling interface, Fluid1 sends velocity to Fluid2 and receives pressure
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-partitioned-pipe-precice-config.png)
+<img src="images/tutorials-partitioned-pipe-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-partitioned-pipe-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -50,7 +51,8 @@ cd fluid2-openfoam-pimplefoam
 The OpenFOAM solvers generate a `.foam` file each. You can open this file in ParaView.
 An example of the visualized expected results looks as follows:
 
-![result](images/tutorials-partitioned-pipe-results-sonicliquidfoam-pimplefoam.png)
+<img src="images/tutorials-partitioned-pipe-results-sonicliquidfoam-pimplefoam_light.png" class="img-light" alt="result">
+<img src="images/tutorials-partitioned-pipe-results-sonicliquidfoam-pimplefoam_dark.png" class="img-dark" style="display:none;" alt="result">
 
 Observe that the velocity and pressure values are smoothly changing around the coupling interface.
 
@@ -83,7 +85,8 @@ The standard mesh for the pipe is a structured mesh that is orthogonal along the
 ```
 
 The mesh looks like this:
-![pipe_skewed](images/tutorials-partitioned-pipe-results-skewed.png)
+<img src="images/tutorials-partitioned-pipe-results-skewed_light.png" class="img-light" alt="pipe_skewed">
+<img src="images/tutorials-partitioned-pipe-results-skewed_dark.png" class="img-dark" style="display:none;" alt="pipe_skewed">
 
 In the end of the simulation, the script runs a post-process utility to calculate the flow rate at the inlet of each participant. Comparing the output for both participants with the skewed mesh, we can observe a loss of mass across the coupling interface.
 

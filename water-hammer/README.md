@@ -42,11 +42,13 @@ This sudden valve opening generates pressure disturbances that propagate through
 
 preCICE configuration for the 1D–3D simulation (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization 1D–3D](images/tutorials-water-hammer-1d3d-precice-config.png)
+<img src="images/tutorials-water-hammer-1d3d-precice-config_light.png" class="img-light" alt="preCICE configuration visualization 1D–3D">
+<img src="images/tutorials-water-hammer-1d3d-precice-config_daark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization 1D–3D">
 
 preCICE configuration for the 3D–1D simulation:
 
-![preCICE configuration visualization 3D–1D](images/tutorials-water-hammer-3d1d-precice-config.png)
+<img src="images/tutorials-water-hammer-3d1d-precice-config_light.png" class="img-light" alt="preCICE configuration visualization 3D–1D">
+<img src="images/tutorials-water-hammer-3d1d-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization 3D–1D">
 
 ---
 
@@ -230,7 +232,8 @@ images/p_outlet_<case-directory>.png
 
 ### Example visualization
 
-![Pressure evolution at the outlet of the 3D domain in the 1D–3D simulation](images/tutorials-water-hammer-1d3d-outlet-pressure.png)
+<img src="images/tutorials-water-hammer-1d3d-outlet-pressure_light.png" class="img-light" alt="Pressure evolution at the outlet of the 3D domain in the 1D–3D simulation">
+<img src="images/tutorials-water-hammer-1d3d-outlet-pressure_dark.png" class="img-dark" style="display:none;" alt="Pressure evolution at the outlet of the 3D domain in the 1D–3D simulation">
 
 Pressure evolution at the outlet of the 3D domain during the 1D–3D water hammer simulation.
 

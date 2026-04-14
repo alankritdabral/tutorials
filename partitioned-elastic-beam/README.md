@@ -13,13 +13,15 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 We have a rectangular linear elastic beam of dimensions 1 x 1 x 8 m, divided in two subdomains by a splitting plane at z = 6 m. This plane corresponds to the coupling surface. Both ends of the beam (z = 0 and z = 8 m) are fixed. A mechanical load F = -0.001 N is applied constantly along the y-axis onto a small set of nodes near the end of the beam. These boundary conditions can be seen in the input files `beam<x>.inp`. Initial conditions are zero both for position and velocity. Other parameters can be found and customized in the `.inp` files.
 
-![beam setup](images/tutorials-partitioned-elastic-beam-setup.png)
+<img src="images/tutorials-partitioned-elastic-beam-setup_light.png" class="img-light" alt="beam setup">
+<img src="images/tutorials-partitioned-elastic-beam-setup_dark.png" class="img-dark" style="display:none;" alt="beam setup">
 
 ## Configuration
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-partitioned-elastic-beam-precice-config.png)
+<img src="images/tutorials-partitioned-elastic-beam-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-partitioned-elastic-beam-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -33,6 +35,7 @@ The prepared case already contains configuration and mesh files, so that the sim
 
 To see an animated visualization of the results, you can run the script `./visualize.py`. It joins the `*.frd` output files of both participants to form a new file with the entire beam. Then, it calls `cgx`, since CalculiX results can only be visualized with this graphic tool. If you want to use e.g. ParaView, you may use converting tools.
 
-![beam results](images/tutorials-partitioned-elastic-beam-results.png)
+<img src="images/tutorials-partitioned-elastic-beam-results_light.png" class="img-light" alt="beam results">
+<img src="images/tutorials-partitioned-elastic-beam-results_dark.png" class="img-dark" style="display:none;" alt="beam results">
 
 You can open result files directly with `cgx` with the command `cgx beam1.frd`, for instance.

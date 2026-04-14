@@ -13,7 +13,8 @@ Get the [case files of this tutorial](https://github.com/precice/tutorials/tree/
 
 This tutorial solves a heat conduction problem on a 2D domain which has an underlying micro-structure. This micro-structure changes the constituent quantities necessary for solving the problem on the macro scale. This leads to a two-scale problem with one macro-scale simulation and several micro-scale simulations.
 
-![Case setup of two-scale-heat-conduction case](images/tutorials-two-scale-heat-conduction-macro-micro-schematic.png)
+<img src="images/tutorials-two-scale-heat-conduction-macro-micro-schematic_light.png" class="img-light" alt="Case setup of two-scale-heat-conduction case">
+<img src="images/tutorials-two-scale-heat-conduction-macro-micro-schematic_dark.png" class="img-dark" style="display:none;" alt="Case setup of two-scale-heat-conduction case">
 
 At each Gauss point of the macro domain there exists a micro simulation. The macro problem is one participant, which is coupled to many micro simulations. Each micro simulation is not an individual coupling participant, instead we use a managing software which controls all the micro simulations and their coupling via preCICE. The case is chosen from the first example case in the publication
 
@@ -23,7 +24,8 @@ At each Gauss point of the macro domain there exists a micro simulation. The mac
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-two-scale-heat-conduction-precice-config.png)
+<img src="images/tutorials-two-scale-heat-conduction-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-two-scale-heat-conduction-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers and dependencies
 
@@ -87,15 +89,15 @@ Running `micro-dumux` is much faster. A serial simulation takes approximately 2 
 
 Here are the results from Nutils-Nutils and DuMux-DuMux combination:
 
-<img class="img-responsive" src="images/tutorials-two-scale-heat-conduction-results.png" alt="Macro and micro data of macro-nutils - micro-nutils simulation" width=50% height=30%/>
+<img class="img-responsive" src="images/tutorials-two-scale-heat-conduction-results_light.png" alt="Macro and micro data of macro-nutils - micro-nutils simulation" width=50% height=30%/>
 
-<img class="img-responsive" src="images/tutorials-two-scale-heat-conduction-results-du-du.png" alt="Macro and micro data of macro-dumux - micro-dumux simulation" width=50% height=30%/>
+<img class="img-responsive" src="images/tutorials-two-scale-heat-conduction-results-du-du_light.png" alt="Macro and micro data of macro-dumux - micro-dumux simulation" width=50% height=30%/>
 
 The differences of the fields are mainly introduced in by the different numerical schemes in the two solvers.
 
 The participant `macro-nutils` outputs `macro-*.vtk` files which can be viewed in ParaView to see the macro concentration field. The Micro Manager uses the [export functionality](https://precice.org/configuration-export.html#enabling-exporters) of preCICE to output micro simulation data and [adaptivity related data](https://precice.org/tooling-micro-manager-configuration.html#adding-adaptivity-in-the-precice-xml-configuration) to VTU files which can be viewed in ParaView. To view the data on each micro simulation, create a Glyph on the Micro Manager VTU data. In the figure above, micro-scale porosity is shown. For a lower concentration value, the porosity increases (in the lower left corner).
 
-<img class="img-responsive" src="images/tutorials-two-scale-heat-conduction-evolving-micro-simulations.png" alt="Adaptive mesh refinement in the micro simulation" width=50% height=30%/>
+<img class="img-responsive" src="images/tutorials-two-scale-heat-conduction-evolving-micro-simulations._light.png" alt="Adaptive mesh refinement in the micro simulation" width=50% height=30%/>
 
 The micro simulations themselves have a circular micro structure which is resolved in every time step. To output VTK files for each micro simulation, uncomment the `output()` function in the file `micro-nutils/micro.py`. The figure above shows the changing phase field used to represent the circular micro structure and the diffuse interface width.
 

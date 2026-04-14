@@ -15,7 +15,8 @@ This scenario consists of two pipes connected in series, both simulated with Ope
 The simulation begins with some water being present at the bottom left of the pipe. The volume fraction variable alpha is set to be 1 (water) at the bottom half of the inlet and 0 (air) at the top half. The water stream will approach the coupling interface at around $$ t=5s $$ in the simulation.
 At the right boundary of Fluid2 there is a zero gradient boundary condition for velocity and alpha as well as a total pressure set to zero.
 
-![two-phase-setup](images/tutorials-partitioned-pipe-two-phase-setup.png)
+<img src="images/tutorials-partitioned-pipe-two-phase-setup_light.png" class="img-light" alt="two-phase-setup">
+<img src="images/tutorials-partitioned-pipe-two-phase-setup_dark.png" class="img-dark" style="display:none;" alt="two-phase-setup">
 
 On the coupling interface, Fluid1 sends velocity, and alpha to Fluid2 and receives pressure, velocity gradient and alpha gradient. Fluid2 uses the [fixedFluxExtrapolatedPressure](https://www.openfoam.com/documentation/guides/v2112/api/classFoam_1_1fixedFluxExtrapolatedPressureFvPatchScalarField.html) boundary condition as shown in the [partitioned pipe tutorial](https://precice.org/tutorials-partitioned-pipe.html).
 
@@ -37,7 +38,8 @@ This is a very basic example case demonstrating the coupling of a two-phase flow
 
 preCICE configuration (image generated using the [precice-config-visualizer](https://precice.org/tooling-config-visualization.html)):
 
-![preCICE configuration visualization](images/tutorials-partitioned-pipe-two-phase-precice-config.png)
+<img src="images/tutorials-partitioned-pipe-two-phase-precice-config_light.png" class="img-light" alt="preCICE configuration visualization">
+<img src="images/tutorials-partitioned-pipe-two-phase-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization">
 
 ## Available solvers
 
@@ -64,7 +66,8 @@ cd fluid2-openfoam
 The OpenFOAM solvers generate a `.foam` file each. You can open this file in ParaView.
 You can see the water-air interface crossing the coupling interface at around $t=5.0s$.
 
-![result](images/tutorials-partitioned-pipe-two-phase-result.png)
+<img src="images/tutorials-partitioned-pipe-two-phase-result_light.png" class="img-light" alt="result">
+<img src="images/tutorials-partitioned-pipe-two-phase-result_dark.png" class="img-dark" style="display:none;" alt="result">
 
 {% disclaimer %}
 This offering is not approved or endorsed by OpenCFD Limited, producer and distributor of the OpenFOAM software via www.openfoam.com, and owner of the OPENFOAM®  and OpenCFD®  trade marks.
